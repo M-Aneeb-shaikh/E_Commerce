@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GadgetWala - #1 tech store in Pakistan</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+
+  <script src="https://kit.fontawesome.com/8d6806cdef.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles/global_styles.css">
+
+  <link rel="stylesheet" href="styles/homepage__hero.css" />
+  <link rel="stylesheet" href="styles/homepage__show_off.css" />
+  <link rel="stylesheet" href="styles/homepage__deals.css" />
+  <link rel="stylesheet" href="styles/homepage__features.css" />
+  <link rel="stylesheet" href="styles/homepage__contact.css" />
+</head>
+
+<body>
+  <nav>
+    <div id="brand-logo">
+      <a href="index.html"><img src="assets/main_logo.svg" alt="brand logo"></a>
+    </div>
+    <div id="nav-links">
+      <a href="index.html" id="active">Home</a>
+      <a href="pages/products.html">Products</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div id="cart-logo" style="visibility: hidden;">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div id="hamburger-icon" onclick="showNavigation();">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero">
+      <div class="bg-graphics">
+        <img src="assets/layers_purple_top.svg" alt="background graphics">
+      </div>
+      <div id="hero-container">
+        <div class="space-50">
+          <div class="txt-container" id="hero-txt-container">
+            <h1>The store you can TRUST</h1>
+            <p>Find the products you want at the BEST affordable price.</p>
+          </div>
+          <div id="search-menu">
+            <input class="" type="text" name="search product" placeholder="What are you looking for?">
+            <button class="button-solid" type="submit">Search</button>
+          </div>
+        </div>
+        <div class="space-50" id="hero-img-container">
+          <img src="assets/img/image_hero.svg" alt="hero_image">
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"><img src="assets/img/image_divider.svg" alt="divider"></div>
+
+    <section id="show-off" class="">
+      <div class="space-50">
+        <img src="assets/img/image_show_off.svg" alt="featured picture">
+      </div>
+      <div class="space-50">
+        <h2>50+ Products</h2>
+        <p>Shop from a range of 50+ exciting products</p>
+        <a href="pages/products.html"><button class="button-solid" id="order-now-btn" type="submit" value="submit"
+            name="Order Now">Order Now</button></a>
+      </div>
+    </section>
+
+    <div class="divider"><img src="assets/img/image_divider.svg" alt="divider"></div>
+
+    <section id="features">
+      <h2 class="container-title">Why us?</h2>
+      <div class="grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <!-- <img src="assets/icons/icon_bolt.svg" alt="bolt icon"> -->
+            <i class="fa-solid fa-truck-fast fa-xl"></i>
+          </div>
+          <div class="txt-container">
+            Fast Delivery
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <!-- <img src="assets/icons/icon_bolt.svg" alt="bolt icon"> -->
+            <i class="fa-solid fa-box fa-xl"></i>
+          </div>
+          <div class="txt-container">
+            100% Original Products
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <!-- <img src="assets/icons/icon_bolt.svg" alt="bolt icon"> -->
+            <i class="fa-solid fa-dollar-sign fa-xl"></i>
+          </div>
+          <div class="txt-container">
+            Best Prices.
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <!-- <img src="assets/icons/icon_bolt.svg" alt="bolt icon"> -->
+            <i class="fa-solid fa-hand-holding-hand fa-xl"></i>
+          </div>
+          <div class="txt-container">
+            Exceptional Return Policy.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="row">
+        <h2>Stay in touch</h2>
+        <p>Follow us on social media for latest updates</p>
+
+        <div id="social-link-container" class="fl-row">
+          <a href="https://www.w3.org/Provider/Style/dummy.html">
+            <div class="social-link"><i class="fa-brands fa-xl fa-linkedin-in"></i></div>
+          </a>
+          <a href="https://www.w3.org/Provider/Style/dummy.html">
+            <div class="social-link"><i class="fa-brands fa-xl fa-github"></i></div>
+          </a>
+          <a href="https://www.w3.org/Provider/Style/dummy.html">
+            <div class="social-link"><i class="fa-brands fa-xl fa-twitter"></i></div>
+          </a>
+          <a href="https://www.w3.org/Provider/Style/dummy.html">
+            <div class="social-link"><i class="fa-brands fa-xl fa-whatsapp"></i></div>
+          </a>
+          <a href="https://www.w3.org/Provider/Style/dummy.html">
+            <div class="social-link"><i class="fa-brands fa-xl fa-facebook-f"></i></div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <h2>Newsletter</h2>
+        <p>Get fresh deals and updates delivered right in your mailbox!</p>
+        <div id="newsletter">
+          <input type="text" name="email" id="email" placeholder="Enter your email address" />
+          <button type="submit" class="button-solid">Subscribe</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="fl-row">
+    <div class="space-50">
+      <p>GadgetWala 2023 &copy; All rights reserved.</p>
+    </div>
+    <div class="space-50 txt-rtl">Gadgets at the BEST prices.</div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

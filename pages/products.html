@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - GadgetWala</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+
+
+  <script src="https://kit.fontawesome.com/8d6806cdef.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../styles/global_styles.css" />
+
+  <link rel="stylesheet" href="../styles/products__categories.css" />
+  <link rel="stylesheet" href="../styles/products__cart.css">
+  <link rel="stylesheet" href="../styles/products__checkout.css">
+
+</head>
+
+<body onload="getProducts(); addCart(); showCartProducts();">
+  <nav>
+    <div id="brand-logo">
+      <a href="../index.html"><img src="../assets/main_logo.svg" alt="brand logo"></a>
+    </div>
+    <div id="nav-links" class="fl-row js-center">
+      <a href="../index.html">Home</a>
+      <a href="products.html" id="active">Products</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <div id="cart-logo">
+      <i onclick="showCart();" class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div id="hamburger-icon" onclick="showNavigation();">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+  <main>
+    <header>
+      <h1 id="container-title">All Products</h1>
+      <!-- <hr> -->
+      <section id="categories">
+        <div id="default" class="category" onclick="showDefault();"><i class="fa-regular fa-circle-xmark fa-xl"></i>
+          Clear Filters</div>
+        <div id="men-clothes" class="category" onclick="showMenClothes();"><i class="fa-solid fa-mars fa-xl"></i>
+          Clothes</div>
+        <div id="women-clothes" class="category" onclick="showWomenClothes();"><i class="fa-solid fa-venus fa-xl"></i>
+          Clothes</div>
+        <div id="jewel" class="category" onclick="showJewel();"><i class="fa-regular fa-gem fa-xl"></i> Jewelry</div>
+        <div id="tech" class="category" onclick="showTech();"><i class="fa-solid fa-headphones fa-xl"></i> Tech</div>
+      </section>
+      <!-- <hr> -->
+      <div id="products-container">
+
+      </div>
+    </header>
+  </main>
+
+  <!-- Cart Section -->
+  <section id="cart" style="display: none;">
+    <h1 id="cart-container-title">Your Cart</h1>
+    <div id="cart-products-container">
+      <div class="cart-card">
+        <img src="https://picsum.photos/100" alt="product image">
+        <div>
+          <p class="title">I am Title</p>
+          <p class="brand">Xiaomi inc.</p>
+        </div>
+        <p class="price">100$</p>
+      </div>
+    </div>
+    <hr>
+    <div id="total-stats">
+      <div>
+        <p class="heading">Total Products</p>
+        <p id="total-products"></p>
+      </div>
+      <div>
+        <p class="heading">Total Amount</p>
+        <p id="total-price"></p>
+      </div>
+    </div>
+    <button class="button-solid" id="toCheckout" onclick="closeCheckout();">Proceed to checkout</button>
+  </section>
+
+  <section id="checkout">
+    <form action="https://formsubmit.co/arainsaab083@gmail.com" method="POST" >
+      <div id="close" onclick="closeCheckout();"><i class="fa-solid fa-x fa-sm"></i></div>
+
+      <!-- Advanced Features from Formsubmit.co -->
+      <input type="hidden" name="_subject" value="Submission from E-Commerce Store">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <label for="username">Name:</label>
+      <input type="text" name="username" id="useraname" placeholder="Name">
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Email">
+
+      <label for="contact-number">Contact Number:</label>
+      <input type="tel" name="contact-number" id="contact" placeholder="Contact Number">
+
+      <label for="address">Address: </label>
+      <input type="text" name="address" id="address" placeholder="Address">
+
+      <div>
+        <input type="radio" name="payment" value="Cash" id="Cash">
+        <label for="Cash">Cash</label>
+      </div>
+      <div>
+        <input type="radio" name="payment" value="Credit Card" id="Credit-Card">
+        <label for="Credit-Card">Credit Card</label>
+      </div>
+      <div>
+        <input type="radio" name="payment" value="Easypaisa" id="Easypaisa">
+        <label for="Easypaisa">Easypaisa</label>
+      </div>
+
+      <input class="button-solid" type="submit" value="Submit">
+    </form>
+  </section>
+  <footer class="fl-row">
+    <div class="space-50">
+      <p>GadgetWala 2023 &copy; All rights reserved.</p>
+    </div>
+    <div class="space-50 txt-rtl">Gadgets at the BEST prices.</div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="../scripts/index.js"></script>
+</body>
+
+</html>
